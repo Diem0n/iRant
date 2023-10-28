@@ -106,9 +106,11 @@ const openEditDialog = (rant) => {
   deleteBtn.addEventListener("click", (e) => {
     e.preventDefault();
     let idx = rants.findIndex((rant) => rant.id === id);
-    rants.splice(idx, 1);
-    updateRantsList();
-    editDialog.close();
+    if (idx !== -1) {
+      rants.splice(idx, 1);
+      updateRantsList();  
+      editDialog.close();
+    }
   });
   editDialog.showModal();
 };
