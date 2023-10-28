@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iRant</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="formWrapper">
+            <form class="form" id="form" method="get">
+                <input name="title" type="text" required id="title" placeholder="Title">
+                <textarea id="rant" name="rant" required placeholder="What's on your mind?" rows="4"
+                    cols="50"></textarea>
+                <button id="submit" class="cta" type="submit">
+                    Rant It
+                </button>
+
+            </form>
+        </div>
+
+    </main>
+    <section id="rants" class="rants">
+
+        <!-- Sample Rant Card -->
+        <!-- <div class="rant-card">
+            <div class="rant-header">
+                <div class="rant-title">
+                    <h3>My first rant</h3>
+                </div>
+                <div class="functions">
+                    <span id="favIcon" class="favIcon">
+                        <i id="heart"  class="fi fi-rr-heart heart"></i>
+                    </span>
+                    <span>
+                        <i class="fi fi-rr-file-edit"></i>
+                    </span>
+                </div>
+            </div>
+            <p class="rant">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam sequi ab distinctio consectetur
+                et sit in facilis modi provident beatae, exercitationem tempore nam earum vero laboriosam placeat
+                vitae dignissimos.
+            </p>
+            <div class="rant-date">
+                <p>2 days ago</p>
+            </div>
+        </div> -->
+
+    </section>
+    <dialog id="editDialog">
+        <form class="form" id="editForm">
+            <p class="rantId" id="rantId"> </p>
+            <input name="editTitle" type="text" id="editTitle" placeholder="Title" required>
+            <textarea id="editRant" name="editRant" placeholder="What's on your mind?" rows="4" cols="50"
+                required></textarea>
+            <button  class="cta" type="submit">Save Changes</button>
+            <button id="delete" class="cta delete" type="button" > Delete</button>
+        </form>
+    </dialog>
+
+</body>
+<script src="app.js"></script>
+
+</html>
